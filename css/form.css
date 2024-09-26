@@ -1,0 +1,106 @@
+.formcontainer {
+    height: 100vh;
+    margin: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.formsource {
+    width: 50%;
+    height: 50vh;
+    padding: 1.25rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formsource h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.formsource form {
+    display: grid;
+    gap: 0.625rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.3125rem;
+}
+
+.formsource label {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--color-aqua-green);
+    font-family: var(--economica);
+}
+
+input, select {
+    width: 90%;
+    height: 5vh;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark-aqua-green);
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.4rem;
+}
+
+.formsource option{
+    color: var(--color-dark-aqua-green);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.formsource button {
+    width: 15%;
+    height: 5vh;
+    background-color: var(--color-aqua-green);
+    color: var(--color-light);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+
+.formdata h2 {
+    color: var(--color-light);
+    font-family: var(--economica);
+    text-align: center;
+    font-size: 3rem;
+    margin: 1.875rem;
+}
+
+.formdata img {
+    height: 60vh;
+}
+
+.message {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    color: var(--color-light);
+    font-family: var(--economica);
+    font-weight: 200;
+}
+
+.message-success {
+    color: #4CAF50; 
+}
+
+.message-error {
+    color: #f44336; 
+}

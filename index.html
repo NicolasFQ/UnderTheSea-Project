@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under The Sea</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/core.css">
+  <link rel="stylesheet" href="./css/menusource.css">
+  <link rel="stylesheet" href="./css/cards.css">
+  <link rel="stylesheet" href="./css/quiz.css">
+  <link rel="stylesheet" href="./css/news.css">
+  <link rel="stylesheet" href="./css/help.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="menu">
+      <img src="./img/logo (1).png" alt="logo da página Under The Sea">
+      <nav>
+        <ul>
+          <li><a href="#home" class="sector">Home</a></li>
+          <li><a href="#quiz" class="sector">Quiz</a></li>
+          <li><a href="#news" class="sector">Fique por Dentro</a></li>
+          <li><a href="#help" class="btn">Ajude!</a></li>
+          <li><a href="#contact" class="sector">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+
+    <div class="source" id="home">
+      <img src="./img/deixe o oceano respirar.png" alt="Título do início">
+      <p>O oceano precisa da nossa ajuda e você pode fazer parte disso</p>
+      <a href="#tour" class="play"><span class="fa-solid fa-caret-down arrowdown"></span></a>
+    </div>
+   
+  </div>
+
+  <div class="box" id="tour">
+    <div class="cards">
+      <div class="cardlist">
+        <div id="carditem-1" class="infos">
+          <div class="sobretexto">
+            <h3>Poluição Marinha</h3>
+            <p>A poluição marinha é um problema crescente e global que afeta os oceanos do mundo inteiro. Originada
+              principalmente pela atividade humana, ela inclui a introdução de resíduos plásticos, produtos químicos,
+              esgoto não tratado e outros materiais nocivos no ambiente marinho. Essa poluição tem efeitos devastadores
+              na vida marinha, podendo causar a morte de animais que ingerem plásticos ou ficam presos em detritos. </p>
+          </div>
+          <div class="sobreimagem">
+            <img src="./img/Poluição.png" alt="Lixos boiando no mar.">
+          </div>
+        </div>
+        <div id="carditem-2" class="infos">
+          <div class="sobretexto">
+            <h3>Acidificação de Oceanos</h3>
+            <p>A acidificação dos oceanos é um fenômeno preocupante causado pela absorção de dióxido de carbono (CO2) da
+              atmosfera pelos oceanos. Esse processo tem sido acelerado pela atividade humana, especialmente pela queima
+              de combustíveis fósseis e pela mudança no uso da terra, que aumentam as emissões de CO2.
+              A acidificação dos oceanos tem sérias consequências para os organismos marinhos, especialmente para
+              aqueles que constroem conchas e estruturas calcárias, como corais, moluscos e alguns tipos de plâncton.
+            </p>
+          </div>
+          <div class="sobreimagem">
+            <img src="./img/Coral.png" alt="Um coral morrendo, acizentando.">
+          </div>
+        </div>
+        <div id="carditem-3" class="infos">
+          <div class="sobretexto">
+            <h3>Sobrepesca</h3>
+            <p>A sobrepesca é uma prática de pesca insustentável que ocorre quando os recursos pesqueiros são capturados
+              a uma taxa mais rápida do que sua capacidade natural de reprodução e recuperação. Esse problema é
+              exacerbado pela demanda crescente por frutos do mar e pelo avanço da tecnologia de pesca, que permite a
+              captura em grande escala.</p>
+          </div>
+          <div class="sobreimagem">
+            <img src="./img/Peixes.png" alt="Muitos peixes pescados.">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttonpass">
+      <a href="#carditem-1" class="button"></a>
+      <a href="#carditem-2" class="button"></a>
+      <a href="#carditem-3" class="button"></a>
+    </div>
+  </div>
+
+  <div class="quiz" id="quiz">
+    <div class="start-container">
+      <img src="./img/plantas.png" alt="peixe em volta de plantas.">
+      <div class="data">
+        <div class="datatext">
+          <h2>Hora do Quiz</h2>
+          <p>Teste o seu conhecimento!</p>
+        </div>
+        <div class="databutton">
+          <button class="start-btn">Começar</button>
+        </div>
+      </div>
+    </div>
+    <div class="quiz-container" style="display: none;">
+      <div class="question-container">
+        <div class="question-wrapper">
+          <img src="" alt="" class="question-image">
+        </div>
+        <div class="alternatives">
+          <h2 class="question"></h2>
+          <ul class="answers-list"></ul>
+          <div class="feedback-container"></div>
+        </div>
+      </div>
+      <div class="direction">
+        <button class="next-btn">Próximo</button>
+      </div>
+      <div class="reset">
+        <button class="retry-btn" style="display: none;">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="news" id="news">
+    <div class="principal">
+      <h3>Últimas Notícias</h3>
+      <a href=""><img src="./img/Group 2301.png" alt="notícia sobre branqueamento de corais"></a>
+    </div>
+    <div class="triplephoto">
+      <nav>
+        <ul>
+          <li><a href=""><img src="./img/Group 2303.png"
+                alt="notícia sobre recorde de alta temperaturas nos oceanos"></a></li>
+          <li><a href=""><img src="./img/Group 2304.png"
+                alt="notícia sobre o oceano mudando de cor por conta das altas temperaturas"></a></li>
+          <li><a href=""><img src="./img/Group 2302.png"
+                alt="notícia sobre altas temperaturas na superfície do oceano"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="helpcontainer">
+    <div class="help" id="help">
+      <div class="voluntary">
+        <h2>Seja Voluntário!</h2>
+        <a href="#form"><img src="./img/Mãos.png" alt="Pessoas de mãos dadas em uma roda"></a>
+      </div>
+      <div class="app">
+        <h2>Baixe nosso Aplicativo!</h2>
+        <a href=""><img src="./img/Jogo.png"
+            alt="Imagem do nosso jogo, tartaruga em uma cama, botões de dormir, comer e banheiro."></a>
+      </div>
+    </div>
+    <div class="donate">
+      <h3>Doe para o nosso pix!</h3>
+      <p>Chave: 00.123.456-78</p>
+    </div>
+  </div>
+
+  <div class="formcontainer" id="form">
+    <div class="formdata">
+      <h2>Formulário de Voluntariado</h2>
+      <img src="./img/Group 2295.png" alt="peixes amarelos nadando">
+    </div>
+    <div class="formsource">
+      <form action="#form">
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
+          <div id="nomeMessage" class="message"></div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <div id="emailMessage" class="message"></div>
+        </div>
+        <div class="form-group">
+          <label for="regiao">Região onde Mora:</label>
+          <select id="regiao" name="regiao" required>
+            <option value="">Selecione...</option>
+            <option value="Norte">Norte</option>
+            <option value="Nordeste">Nordeste</option>
+            <option value="Centro-Oeste">Centro-Oeste</option>
+            <option value="Sudeste">Sudeste</option>
+            <option value="Sul">Sul</option>
+          </select>
+        </div>
+        <div class="send">
+          <button class="btn" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="contact" id="contact">
+
+    <div class="footer-items">
+      <h4>Navegação</h4>
+      <nav>
+        <ul class="nav-footer">
+          <li><a href="">Home</a></li>
+          <li><a href="">Quiz</a></li>
+          <li><a href="">Fique por Dentro</a></li>
+          <li><a href="">Ajude!</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-items">
+      <h4>ONG's Parceiras</h4>
+      <nav>
+        <ul class="nav-footer">
+          <li><a href="">Ong aqua</a></li>
+          <li><a href="">Ong water</a></li>
+          <li><a href="">Ong ocean</a></li>
+          <li><a href="">Ong sea</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-items">
+      <div class="content">
+        <h4>Contatos</h4>
+        <h3>Telefones</h3>
+        <p>(11) 1234-5678</p>
+        <p>(11) 1234-5678</p>
+
+        <h3>E-mail</h3>
+        <p>contato@underthesea.com.br</p>
+
+        <h3>Endereço</h3>
+        <address>Av. Paulista, 1200 - SP</address>
+      </div>
+    </div>
+
+    <div class="footer-items">
+      <h4>Redes Sociais</h4>
+      <div>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./js/active.js"></script>
+  <script src="./js/quiz.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+
+</html>

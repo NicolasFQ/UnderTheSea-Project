@@ -1,0 +1,53 @@
+.news{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.principal h3{
+    color: var(--color-light);
+    font-size: 5rem;
+    font-family: var(--kaisei);
+    font-weight: 400;
+    letter-spacing: 1px;
+    }
+
+.principal img{
+    height: 70vh;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    transition: 1s;
+    }
+    
+.triplephoto{
+    margin-top: 4.5rem;
+    padding-top: 4rem;
+    }
+
+.triplephoto img{
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    height: 20vh;
+    transition: 1s;
+
+}
+.triplephoto ul{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.triplephoto img:hover{
+    transform: scale(1.1);
+}
+
+.principal img:hover{
+    transform: scale(1.1);
+}

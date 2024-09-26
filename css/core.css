@@ -1,0 +1,25 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-aqua-green: #25C1BD;
+    --color-dark-aqua-green: #14726F;
+    --economica: "Economica", sans-serif;
+    --kaisei: "Kaisei Decol", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
